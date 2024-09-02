@@ -42,3 +42,36 @@ export const AJAX = async function(url, uploadData = undefined)
         throw err;
     }
 };
+
+// to convert decimal values to fractional
+export const getFraction = function(amount) 
+{
+    if (parseFloat(amount) === parseInt(amount)) 
+        return amount;
+    const gcd = function (a, b) 
+    {
+        if (b < 0.0000001) 
+          return a;
+        return gcd(b, Math.floor(a % b));
+    };
+    
+    const len = amount.toString().length - 2;
+    let denominator = Math.pow(10, len);
+    let numerator = amount * denominator;
+    let divisor = gcd(numerator, denominator);
+    numerator /= divisor;
+    denominator /= divisor;
+    let base = 0;
+    
+    // converting to mixed fraction 
+    if (numerator > denominator) 
+    {
+        base = Math.floor(numerator / denominator);
+        numerator -= base * denominator;
+        // pulling out the base number and reducing the numerator
+    }
+    amount = Math.floor(numerator) + '/' + Math.floor(denominator);
+    if (base) 
+        amount = base + ' ' + amount;
+    return amount;
+};

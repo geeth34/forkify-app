@@ -1,9 +1,6 @@
 import view from './view.js';
+import { getFraction } from '../helper.js';
 import icons from '../../img/icons.svg';
-
-// library to convert decimal values to fractional 
-import { Fraction } from 'fractional';
-console.log(Fraction);
 
 class RecipeView extends view
 {
@@ -100,7 +97,7 @@ class RecipeView extends view
                 <svg class="recipe__icon">
                     <use href="${icons}#icon-check"></use>
                 </svg>
-                <div class="recipe__quantity">${ing.quantity ? new Fraction(ing.quantity).toString() : ''}</div>
+                <div class="recipe__quantity">${ing.quantity ? getFraction(ing.quantity).toString() : ''}</div>
                 <div class="recipe__description">
                     <span class="recipe__unit">${ing.unit}</span>
                     ${ing.description}
