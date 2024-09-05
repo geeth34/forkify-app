@@ -20,27 +20,24 @@ const controlRecipes = async function()
 {
   try
   {
-    const id = window.location.hash.slice(1);// hash contains the query/fragment of the url 
+    const id = window.location.hash.slice(1); // hash contains the query/fragment of the url 
     console.log(id); 
     if(!id) return;
 
-    // render loading spinner
+    // loading/buffering spinner
     recipeView.renderSpinner();
     
     // update search results and bookmark
     resultsView.update(model.getSearchResultsPage());
     bookmarksView.update(model.state.bookmarks);
 
-    // loading recipe data 
+    // load and render recipe data 
     await model.loadRecipe(id);
-
-    // render recipe data 
     recipeView.render(model.state.recipe);
   }
   catch(err)
   {
     console.log(err);
-    // render error 
     recipeView.renderError();
   };
 };
@@ -49,7 +46,7 @@ const controlSearchResults = async function()
 {
   try
   {
-    // get search query 
+    // get input search query 
     const query = searchView.getQuery();
     if(!query) return;
     resultsView.renderSpinner();
@@ -57,7 +54,6 @@ const controlSearchResults = async function()
     // load search results 
     await model.loadSearchResults(query);
 
-    // render results 
     resultsView.render(model.getSearchResultsPage());
 
     // render initial pagination buttons 
@@ -75,31 +71,30 @@ const controlPagination = function(goToPage)
   // render the updated results 
   resultsView.render(model.getSearchResultsPage(goToPage));
 
-  // render new pagination buttons :
+  // render new pagination buttons 
   paginationView.render(model.state.search);
 };
 
 const controlServings = function(newServings)
 {
-  // update recipe servings (in state)
   model.updateServings(newServings);
-  
-  // render the updated recipe
   recipeView.update(model.state.recipe);
 };
 
 const controlAddBookmark = function()
 {
+  
   // add/remove bookmark 
   if(!model.state.recipe.bookmarked)
     model.addBookmark(model.state.recipe);
-  // if bookmarked is true
+
+  // if 'bookmarked' is true
   else
     model.deleteBookmark(model.state.recipe.id);
 
   // update bookmark button 
   recipeView.update(model.state.recipe);
-  // render bookmarks 
+  
   bookmarksView.render(model.state.bookmarks);
 };
 
@@ -117,18 +112,18 @@ const controlAddRecipe = async function(newRecipe)
     addRecipeView.renderSpinner();
     console.log(newRecipe);
     
-    // upload the recipe data received 
+    // upload input recipe data 
     await model.uploadRecipe(newRecipe);
+
     console.log(model.state.recipe);
     recipeView.render(model.state.recipe);
 
     // display succes message 
     addRecipeView.renderMessage();
     
-    // render the bookmarks 
     bookmarksView.render(model.state.bookmarks);
 
-    // change 'id' in url
+    // change recipe 'id' in url
     window.history.pushState(null, '', `#${model.state.recipe.id}`);
 
     // close form window 
