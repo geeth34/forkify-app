@@ -3,15 +3,15 @@
 Application that allows users to search for recipes based on ingredients, view detailed recipe information, and save their favorite ones. <br>
 The application is designed to provide a user-friendly interface for discovering and making custom recipe uploads.
 
-Here's a preview of the project : 
-
+You can view the live demo of the application here : 
+<div style="width: 100px;"> 
 https://github.com/user-attachments/assets/bf1e45be-d303-40ca-805c-2de9fd30667b
-
+</div>
 ## Installation 
 
 Clone the repository 
 ```bash
-git clone https://github.com/anuraghazra/QuickerPoll.git
+git clone https://github.com/geeth34/forkify-app.git
 ```
 
 Navigate to the project directory and install all the dependencies.
@@ -21,8 +21,6 @@ npm install
 ```
 
 ## Usage
-
-To run the project, use the following command :
 
 ```bash
 npm start
@@ -40,11 +38,11 @@ Parcel bundles the HTML, SASS and Javascript files in production mode and it opt
 
 ## Features
 
-- Search recipes : Allows to search recipes based on the item or ingredients.
-- Recipe details : Displays detailed information about each recipe, including ingredients and cooking instructions.
-- Servings : Users can select the number of servings and the ingredient quantities will be displayed accordingly.
-- Bookmark : Users can save recipes their favorite recipes for easy access later.
-- Add recipe : To make custom recipe uploads.
+- Search recipes : allows to search recipes based on the item or ingredients.
+- Recipe details : displays detailed information about each recipe, including ingredients and cooking instructions.
+- Servings : users can select the number of servings and the ingredient quantities will be displayed accordingly.
+- Bookmark : users can save recipes their favorite recipes for easy access later.
+- Add recipe : to make custom recipe uploads.
 
 
 ## References
