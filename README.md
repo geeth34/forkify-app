@@ -4,9 +4,9 @@ Application that allows users to search for recipes based on ingredients, view d
 The application is designed to provide a user-friendly interface for discovering and making custom recipe uploads.
 
 You can view the live demo of the application here : 
-<div style="width: 100px;"> 
+
 https://github.com/user-attachments/assets/bf1e45be-d303-40ca-805c-2de9fd30667b
-</div>
+
 ## Installation 
 
 Clone the repository 
