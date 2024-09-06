@@ -38,11 +38,11 @@ Parcel bundles the HTML, SASS and Javascript files in production mode and it opt
 
 ## Features
 
-- Search recipes : allows to search recipes based on the item or ingredients.
-- Recipe details : displays detailed information about each recipe, including ingredients and cooking instructions.
-- Servings : users can select the number of servings and the ingredient quantities will be displayed accordingly.
-- Bookmark : users can save recipes their favorite recipes for easy access later.
-- Add recipe : to make custom recipe uploads.
+- **Search recipes** : allows to search recipes based on the item or ingredients.
+- **Recipe details** : displays detailed information about each recipe, including ingredients and cooking instructions.
+- **Servings** : users can select the number of servings and the ingredient quantities will be displayed accordingly.
+- **Bookmark** : users can save recipes their favorite recipes for easy access later.
+- **Add recipe** : to make custom recipe uploads.
 
 ## Built with
 
