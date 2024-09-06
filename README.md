@@ -39,7 +39,7 @@ Open http://localhost:3000 to view it in the browser.
 ```bash
 npm run build
 ```
-  Parcel bundles the HTML, SASS and Javascript files in production mode and it optimizes the build for the best performance.
+  Parcel bundles the HTML, SASS and Javascript files in production mode and optimizes the build for the best performance.
 
 ## Features
 
