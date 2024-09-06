@@ -44,9 +44,20 @@ Parcel bundles the HTML, SASS and Javascript files in production mode and it opt
 - Bookmark : users can save recipes their favorite recipes for easy access later.
 - Add recipe : to make custom recipe uploads.
 
+## Built with
 
+- HTML
+- SASS
+- Javascript
+- NPM
+- Parcel
+- Forkify API
+  
 ## References
 
 Check out [Forkify API v2 Documentation](https://forkify-api.herokuapp.com/v2) for details regarding API endpoints.
 
-I made the application as part of the [JavaScript course](https://udemy-certificate.s3.amazonaws.com/pdf/UC-d1947081-94ad-4464-9e66-87d2c3999fed.pdf).
+## Acknowledgements
+
+- [Jonas Schmedtmann](https://github.com/jonasschmedtmann)
+
