@@ -5,7 +5,7 @@ The application is designed to provide a user-friendly interface for discovering
 
 You can visit the website here : [forkify](https://forkify-recipessearch.netlify.app/)
 
-https://github.com/user-attachments/assets/bf1e45be-d303-40ca-805c-2de9fd30667b
+https://github.com/user-attachments/assets/8bd35970-9f9b-4206-9803-612d167dd2d8
 
 ## Installation 
 
