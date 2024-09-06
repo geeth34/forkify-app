@@ -9,12 +9,12 @@ https://github.com/user-attachments/assets/bf1e45be-d303-40ca-805c-2de9fd30667b
 
 ## Installation 
 
-Clone the repository 
+1. Clone the repository 
+
 ```bash
 git clone https://github.com/geeth34/forkify-app.git
 ```
-
-Navigate to the project directory and install all the dependencies.
+2. Navigate to the project directory and install all the dependencies.
 
 ```bash
 npm install
@@ -22,19 +22,24 @@ npm install
 
 ## Usage
 
+1. Generate an API key at [Forkify API key](https://forkify-api.herokuapp.com/v2) and enter it in your `config.js` file
+
+```bash
+const KEY = 'YOUR_API_KEY';
+```
+2. To run the application in devlopment mode
+
 ```bash
 npm start
 ```
-Runs the app in the development mode. <br>
 Open http://localhost:3000 to view it in the browser.
 
+3. Build the application for production to the `dist` folder
 
 ```bash
 npm run build
 ```
-Builds the app for production to the `dist` folder. <br>
-Parcel bundles the HTML, SASS and Javascript files in production mode and it optimizes the build for the best performance.
-
+  Parcel bundles the HTML, SASS and Javascript files in production mode and it optimizes the build for the best performance.
 
 ## Features
 
