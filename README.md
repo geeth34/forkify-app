@@ -3,7 +3,7 @@
 Application that allows users to search for recipes based on ingredients, view detailed recipe information, and save their favorite ones. <br>
 The application is designed to provide a user-friendly interface for discovering and making custom recipe uploads.
 
-You can view the live demo of the application here : 
+You can visit the website here : [forkify](https://forkify-recipessearch.netlify.app/)
 
 https://github.com/user-attachments/assets/bf1e45be-d303-40ca-805c-2de9fd30667b
 
